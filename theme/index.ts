@@ -26,6 +26,20 @@ const theme = extendTheme({
     })
   },
 
+  components: {
+    Button: {
+      variants: {
+        hero: {
+          bgGradient: 'linear(to-r, primary, secondary)',
+          _hover: {
+            bgGradient: 'linear(to-r, secondary,primary )',
+          },
+
+        }
+      }
+    }
+  }
+
 });
 
 export default theme;
