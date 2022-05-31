@@ -15,19 +15,19 @@ export default function Home() {
         </Flex>
 
         <Flex
-          height={"full"}
-          w={"full"}
+          height="full"
+          w="full"
           direction={{ base: "column", md: "row" }}
-          alignItems={"center"}
-          justifyContent={"space-around"}
+          alignItems="center"
+          justifyContent="space-around"
         >
-          <Box maxWidth={"700px"} textAlign={{ base: "center", md: "left" }}>
-            <Heading fontSize={["50px", "70px", "100px"]} mb={7}>
+          <Box maxWidth="700px" textAlign={{ base: "center", md: "left" }}>
+            <Heading fontSize={["50px", "70px", "100px"]} mb="7">
               Welcome to QuickForm!
             </Heading>
 
             <Text
-              textColor={"toneDownText"}
+              textColor="toneDownText"
               maxWidth={{ base: "100%", md: "60%" }}
             >
               Quickly compose a form that you desire and start gathering data
@@ -35,13 +35,13 @@ export default function Home() {
             </Text>
           </Box>
 
-          <Box bg={"green.100"} w={"200px"} h={"200px"} display={{base: 'none', md: 'block'}}>
+          <Box bg="green.100" w="200px" h="200px" display={{base: 'none', md: 'block'}}>
             yo
           </Box>
         </Flex>
 
-        <Link href={"/create"}>
-          <Button variant={"hero"} size={"lg"}>
+        <Link href="/create">
+          <Button variant="hero" size="lg">
             Create from
           </Button>
         </Link>
