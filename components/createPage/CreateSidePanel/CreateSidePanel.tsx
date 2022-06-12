@@ -1,8 +1,9 @@
 import { Box, Flex, Heading, Text, VStack } from "@chakra-ui/react";
 import Logo from "../../common/Logo/Logo";
 import { CreateFormSegment } from "../CreateFormSegment/CreateFormSegment";
+import { Segment } from "../../../types/types";
 
-const data = [
+const segments: Segment[] = [
   {
     title: "Text",
     subtitle: "Simple text with to inform the person taking the survey.",
@@ -31,7 +32,7 @@ const data = [
 
 export function CreateSidePanel() {
   return (
-    <VStack w="350px" h="100vh" overflowY="auto" bgColor="brand">
+    <VStack w="350px" h="100vh" overflowY="auto" bgColor="brand" as="aside">
       <Flex
         bgColor="toneDown"
         w="100%"
@@ -50,7 +51,7 @@ export function CreateSidePanel() {
         </Text>
       </Box>
 
-      {data.map((segment) => (
+      {segments.map((segment) => (
         <CreateFormSegment segment={segment} key={segment.title} />
       ))}
     </VStack>
