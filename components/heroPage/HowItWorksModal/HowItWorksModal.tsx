@@ -1,5 +1,4 @@
 import {
-  Button,
   List,
   ListIcon,
   ListItem,
@@ -11,15 +10,13 @@ import {
   ModalHeader,
   ModalOverlay,
   Text,
-  UnorderedList,
   useDisclosure,
 } from "@chakra-ui/react";
 import { MdLabelImportant } from "react-icons/md";
 
-import Link from "next/link";
-
 export default function HowItWorksModal() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+
   return (
     <>
       <Text

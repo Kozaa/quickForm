@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <Box width={"100vw"} height={'80vh'} py={6} px={10}>
+    <Box width={"100vw"} height={"80vh"} py={6} px={10}>
       <VStack height={"full"}>
         <Flex w={"full"} justify={"space-between"}>
           <Logo />
@@ -35,7 +35,12 @@ export default function Home() {
             </Text>
           </Box>
 
-          <Box bg="green.100" w="200px" h="200px" display={{base: 'none', md: 'block'}}>
+          <Box
+            bg="green.100"
+            w="200px"
+            h="200px"
+            display={{ base: "none", md: "block" }}
+          >
             yo
           </Box>
         </Flex>
@@ -46,6 +51,26 @@ export default function Home() {
           </Button>
         </Link>
       </VStack>
+      <Box
+        bgGradient={"radial(ellipse at center, secondary 0, transparent 70%)"}
+        h="120vh"
+        w="100vh"
+        position="fixed"
+        top="-10vh"
+        left="0"
+        transform="translateX(-75%)"
+        zIndex={-1}
+      />
+      <Box
+        bgGradient={"radial(accent -50%, transparent 70%)"}
+        h="100vh"
+        w="100vh"
+        position="fixed"
+        top="100%"
+        left="100%"
+        transform="translateY(-50%) translateX(-50%)"
+        zIndex={-1}
+      />
     </Box>
   );
 }
