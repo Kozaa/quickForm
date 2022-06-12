@@ -14,8 +14,8 @@ const theme = extendTheme({
     primary: '#4D92B9',
     secondary: '#D04193',
     accent: '#8E5BF2',
-    brand: '#718096',
-    toneDownText: '#718096'
+    brand: '#232B3D',
+    toneDown: '#718096'
 
   },
   styles: {

@@ -20,7 +20,7 @@ export default function HowItWorksModal() {
   return (
     <>
       <Text
-        textColor={"toneDownText"}
+        textColor='toneDown'
         onClick={onOpen}
         _hover={{ textColor: "white", cursor: "pointer" }}
       >

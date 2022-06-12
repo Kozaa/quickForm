@@ -27,7 +27,7 @@ export default function Home() {
             </Heading>
 
             <Text
-              textColor="toneDownText"
+              textColor="toneDown"
               maxWidth={{ base: "100%", md: "60%" }}
             >
               Quickly compose a form that you desire and start gathering data
